@@ -1,0 +1,30 @@
+input{
+  width: 300px;
+  height: 60px;
+  font-size: 60px;
+  font-family: 'Neucha', cursive;
+}
+h1{
+color:blue;
+  font-family: 'Neucha', cursive;
+}
+
+h3{
+  font-size: 130px;
+  text-align: center;
+  color: aqua;
+  font-family: 'Caveat Brush', cursive;
+}
+button{
+  font-family: 'Pangolin', cursive;
+  border-radius: 25px;
+  color:aqua;
+  width: 150px;
+  height: 60px;
+  font-size: 20px;
+  background-color: purple;
+}
+body{
+  background: url("http://dreamingofleaving.com/wp-content/uploads/2014/11/instagram-cover-1920x1080.jpg");
+  background-size: cover;
+}

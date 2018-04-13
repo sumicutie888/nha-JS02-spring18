@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <h1>Name:</h1>
+  <input placeholder="Name:" id="name" type="text">
+  <br>
+  <br>
+  <h1>Temperature:</h1>
+  <input placeholder="Temperature:" id="temp" type="text">
+  <br>
+  <br>
+
+  <button>Add Student</button>
+  <h1>Healthy Students:</h1>
+  <ul id="healthy">
+  </ul>
+  <h1>Unhealthy Students:</h1>
+  <ul id="unhealthy">
+  </ul>
+  <br>
+
+  <script>
+    $("button").click(() => {
+      let name = $("input#name").val();
+
+
+      let temp = $("input#temp").val();
+
+      if (temp <= 98) {
+        $("ul#healthy").append(name + "<br>");
+      }
+       else if (temp > 98) {
+
+      }
+     if (temp > 103) {
+        $("ul#unhealthy").css("color","red");
+      }
+    })
+  </script>
+
+</body>
+
+</html>

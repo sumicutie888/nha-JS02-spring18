@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="magicBall.css">
+  <link href="https://fonts.googleapis.com/css?family=Give+You+Glory|Neucha" rel="stylesheet">
+
+</head>
+
+<body>
+  <h1>Ask the Magic 8 Ball a question then Click the ball and it shall answer</h1>
+  <img src="http://cdn.road.cc/sites/default/files/pictures/picture-626248-1521447216.png">
+  <div></div>
+</body>
+<script>
+$("img").click(() => {
+  const guess = [
+    "It is certain",
+    "Reply hazy try again",
+    "It is decidedly so",
+    "Without a doubt",
+    "Yes, definitely",
+    "You may rely on it",
+    "As I see it, yes",
+    "Most likely",
+    "Outlook good",
+    "Yes",
+    "Signs point to yes",
+    "Ask again later",
+    "Better not tell you now",
+    "Cannot predict now",
+    "Concentrate and ask again",
+    "Dont count on it",
+    "No way!",
+    "My reply is no",
+    "My sources say no",
+    "Outlook not so good",
+    "Very doubtful",
+  ]
+  const randomIndex = parseInt(Math.random() * guess.length);
+  const randomSentence = guess[randomIndex];
+  console.log(randomSentence);
+  $("div").html(randomSentence);
+})
+</script>
+
+</html>

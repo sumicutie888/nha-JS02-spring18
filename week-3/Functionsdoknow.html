@@ -1,0 +1,39 @@
+<!DOCTYPE>
+<html>
+<head>
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+  <div></div>
+  <script>
+  year = 2018;
+  minimumWage = 13;
+
+
+
+  let sentence=`New york city's minimum wage in ${year} was ${minimumWage} dollars per hour`;
+  minimumWage= 15;
+  year=2019;
+  let= sentence2 =`New york city's minimum wage next year will be ${minimumWage} dollars per hour`;
+  $("div").append(sentence);
+  $("div").append(sentence2);
+
+const minimumWageForYear= (year) => {
+  if(year==2018){
+    return 13;
+  } else if (year==2019){
+    return 15;
+  }
+
+};
+  </script>
+</body>
+
+
+</html>

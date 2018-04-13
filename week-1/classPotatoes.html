@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="classPotatoes.css">
+  <link href="https://fonts.googleapis.com/css?family=Give+You+Glory|Neucha" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Loved+by+the+King" rel="stylesheet">
+</head>
+
+<body>
+  <h1>Noun:</h1>
+  <input placeholder="Noun:"id="noun"type="text">
+<br>
+<br>
+<h1>Adjective:</h1>
+  <input placeholder="Adjective:"id="adj"type="text">
+  <br>
+  <br>
+  <button>Generate Sentence</button>
+<br>
+  <div></div>
+</body>
+
+<script>
+
+$("button").click(()=> {
+  //do something
+  console.log("DO I work")
+  let adj= $("input#adj").val();
+  let noun=$("input#noun").val();
+
+  let sentence=`Have you ever tasted a ${adj} ${noun}?`;
+  $("div").appened(sentence);
+})
+</script>
+
+
+</html>

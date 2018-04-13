@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="classPotatoes.css">
+  <link href="https://fonts.googleapis.com/css?family=Give+You+Glory|Neucha" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Loved+by+the+King" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Caveat+Brush|Sedgwick+Ave" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Pangolin" rel="stylesheet">
+</head>
+
+<body>
+  <h3>Insta-Pic</h3>
+  <hr>
+  <h1>Enter Url here:</h1>
+  <input placeholder="Url:" id="img" type="img">
+
+  <br>
+  <br>
+  <br>
+  <h1>Enter photo caption here:</h1>
+  <input placeholder="Text:" id="text" type="text">
+  <br>
+  <br>
+  <br>
+  <button>Add Photo with caption</button>
+
+  <div></div>
+  <div></div>
+</body>
+
+<script>
+  $("button").click(() => {
+    //do something
+    let img = $("input#img").val();
+    let text = $("input#text").val();
+    let sentence =("input#text").val();
+
+    $("div").append("<img src='"+ img+"'></img>");
+    $("div").html(sentence);
+  })
+</script>
+
+
+</html>
