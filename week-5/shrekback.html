@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+</head>
+<script>
+  const theCreature = "Shrek";
+  const secondCreature= "Donkey";
+
+  // Defining a function
+  const getCreatureType = (name) => {
+    if (name == "Shrek") {
+      return "ogre";
+    } else if (name == "Donkey") {
+      return "donkey";
+    } else if (name == "Puss in Boots") {
+      return "cat";
+    } else {
+      return "not a creature";
+    }
+  }
+
+  //call the function and save the value
+  const shrekCreatureType = getCreatureType(theCreature);
+  const donkeyCreatureType = getCreatureType(secondCreature);
+
+  //
+  console.log(shrekCreatureType);
+
+  console.log(theCreature + " is an "+ shrekCreatureType);
+  console.log(theCreature + " is an "+ shrekCreatureType + " but " + secondCreature+" is a " + donkeyCreatureType);
+</script>
+
+<body>
+</body>
+
+</html>
