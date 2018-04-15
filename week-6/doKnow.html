@@ -1,10 +1,35 @@
 <!DOCTYPE html>
 <html>
-<head>
-</head>
-<script>
 
-</script>
+<head>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="doKnow.css">
+</head>
+
 <body>
+
+  <span id="headsTailsImg"></span>
+
+  <button>Take your guess</button>
+
+  <script>
+
+    const flipCoin = ((headsOrTails) => {
+      if (headsOrTails == 0) {
+        $("span#headsTailsImg").html("<img src='https://www.usmint.gov/wordpress/wp-content/uploads/2018/01/2018-lincoln-penny-uncirculated-obverse-philadelphia.jpg'>");
+
+      } else {
+        $("span#headsTailsImg").html("<img src='https://www.usmint.gov/wordpress/wp-content/uploads/2017/12/2018-lincoln-penny-proof-reverse.jpg'>");
+      }
+    });
+
+    let headsOrTails = parseInt(Math.random() * 2);
+
+    $("button").click(() => {
+      flipCoin(headsOrTails);
+    });
+
+  </script>
 </body>
+
 </html>
