@@ -1,0 +1,20 @@
+body {
+  background: url("https://ecdn.teacherspayteachers.com/thumbitem/10-pennies-100-pennies-20-nickels-3D-pdf-1504561971/original-1716551-1.jpg");
+  background-repeat: repeat;
+}
+
+img {
+  width: 300px;
+  display: block;
+  margin: auto;
+}
+
+button {
+  width: 200px;
+  height: 100px;
+  background-color: yellow;
+  border-radius: 30px;
+  margin: auto;
+  display: block;
+  font-size: 30px;
+}
